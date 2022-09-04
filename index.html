@@ -68,13 +68,25 @@
         <script>
             'use strict'
 
-            document.getElementById('trigger').addEventListener('click', () => {
+            const img = document.getElementById('trigger');
+
+            img.addEventListener('click', () => {
                 const target = document.getElementById('target'); 
                 var newline = "\r\n"; 
                 const line1 = "2022年4月からKICというICTに関する大学院に入りました。";
                 const line2 = "2022年6月末からプログラミング言語を勉強し始めました。";
                 const line3 = "勉強したプログラミング言語: HTML, CSS, JavaScript, MySQL, PHP, Git。";
-                target.textContent = line1 + newline + line2 + newline + line3;
+                var state = true;
+
+                if (state) {
+                    target.textContent = line1 + newline + line2 + newline + line3;
+                    img.src = "496535.jpg";
+                    state = false;
+                } else {
+                    target = document.getElementById('target');
+                    img = document.getElementById('trigger');
+                }
+
             });
         </script>
   </body>
