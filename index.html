@@ -71,9 +71,10 @@
             document.getElementById('trigger').addEventListener('click', () => {
                 const target = document.getElementById('target'); 
                 var newline = "\r\n"; 
-                target.textContent = "2022年4月からKICというICTに関する大学院に入りました。" + newline + "2022年6月末からプログラミング言語を勉強し始めました。" + newline + "勉強したプログラミング言語: HTML, CSS, JavaScript, MySQL, PHP, Git。";
-                
-                
+                const line1 = "2022年4月からKICというICTに関する大学院に入りました。";
+                const line2 = "2022年6月末からプログラミング言語を勉強し始めました。";
+                const line3 = "勉強したプログラミング言語: HTML, CSS, JavaScript, MySQL, PHP, Git。";
+                target.textContent = line1 + newline + line2 + newline + line3;
             });
         </script>
   </body>
