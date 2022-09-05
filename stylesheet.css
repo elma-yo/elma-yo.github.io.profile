@@ -109,12 +109,26 @@ main {
     padding-left: 45px;
     padding-right: 45px;
     cursor: pointer;
+    position: relative;
 }
 
 .photo img {
     float: left;
     width: 100%;
     border-radius: 50%;
+}
+
+.photo:hover::before {
+    content: 'Please click me !';
+    color: rgb(94, 94, 94);
+    font-weight: bold;
+    background-color: white;
+    border-radius: 4px;
+    padding: 3px;
+    opacity: 0.6;
+    position: absolute;
+    top: 50px;
+    left: 118px;
 }
 
 .introduction {
