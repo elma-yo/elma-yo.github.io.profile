@@ -30,7 +30,7 @@ header {
     color: rgb(255, 255, 255);
     background-color: rgb(94, 94, 94);
     width: 100%;
-    height: 65px;
+    height: 66px;
 }
 
 .header-left {
@@ -39,16 +39,26 @@ header {
 }
 
 .header-left h1 {
-    padding: 15px 15px;
+    padding: 9px 15px;
 }
 
 .header-right {
     float: right;
-    margin: 20px 50px;
+    margin: 22px 50px;
+}
+
+.header-right ul {
+    display: flex;
+}
+
+.header-right li {
+    list-style: none;
+    margin-left: 20px;
 }
 
 .header-right a {
     color: aliceblue;
+    font-size: 20px;
 }
 
 footer {
@@ -83,6 +93,10 @@ footer {
 
 .footer-right span {
     padding-right: 10px;
+}
+
+.footer-right li {
+    margin-bottom: 3px;
 }
 
 .twitter:hover {
