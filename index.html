@@ -81,7 +81,11 @@
             const target = document.getElementById('target'); 
             const cTarget = document.getElementById('c-target');
 
-            cTarget.style.display = "none";
+            function hideCTarget() { 
+                cTarget.style.display = "none";
+            }
+
+            change2();
 
             img.addEventListener('click', () => {
                 target.style.display = "none";
