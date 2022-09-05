@@ -82,11 +82,11 @@
             const cTarget = document.getElementById('c-target');
 
             var state = true;
-            function hide () { 
+            function hideCTarget () { 
                 cTarget.style.display = "none";
                 const state = "hide";
             }
-            hide();
+            hideCTarget();
 
             img.addEventListener('click', () => {
                 if (state === true) {
@@ -98,6 +98,7 @@
                     cTarget.style.display = "none";
                     target.style.display = "block";
                     img.src = "img1.png";
+                    state = true;
                 }
             });
         </script>
