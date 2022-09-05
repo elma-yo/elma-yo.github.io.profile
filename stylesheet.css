@@ -140,10 +140,6 @@ main {
     line-height: 32px;
 }
 
-#target {
-    white-space: pre;
-}
-
 .btn-contact {
     color: aliceblue;
     background-color: rgb(125, 127, 129);
