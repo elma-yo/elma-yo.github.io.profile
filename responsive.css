@@ -55,6 +55,7 @@
     .text p {
         font-size: 15px;
         width: 170px;
+        word-wrap: break-word;
     }
     .btn-contact {
         margin-left: 25px;
