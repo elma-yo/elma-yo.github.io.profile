@@ -81,32 +81,24 @@
             const target = document.getElementById('target'); 
             const cTarget = document.getElementById('c-target');
 
-            function hideCTarget() { 
+            var state = true;
+            function hide () { 
                 cTarget.style.display = "none";
+                const state = "hide";
             }
-
-            change2();
+            hide();
 
             img.addEventListener('click', () => {
-                target.style.display = "none";
-                cTarget.style.display = "block";
-                img.src = "img2.jpg";
-                
-                // var newline = "\r\n"; 
-                // const line1 = "2022年4月からKICというICTに関する大学院に入りました。";
-                // const line2 = "2022年6月末からプログラミング言語を勉強し始めました。";
-                // const line3 = "勉強したプログラミング言語: HTML, CSS, JavaScript, MySQL, PHP, Git。";
-                // var state = true;
-
-                // if (state) {
-                //     target.textContent = line1 + newline + line2 + newline + line3;
-                //     img.src = "496535.jpg";
-                //     state = false;
-                // } else {
-                //     target = document.getElementById('target');
-                //     img = document.getElementById('trigger');
-                // }
-
+                if (state === true) {
+                    target.style.display = "none";
+                    cTarget.style.display = "block";
+                    img.src = "img2.jpg";
+                    state = false;
+                } else {
+                    cTarget.style.display = "none";
+                    target.style.display = "block";
+                    img.src = "img1.png";
+                }
             });
         </script>
   </body>
