@@ -32,7 +32,16 @@
                     <div class="text">
                         <h1>余 紓 萍</h1>
                         <h2>ヨ シュピン ・ SHU-PING YU</h2>
-                        <p id="target">台湾出身の留学生です。<br>現在は神戸情報大学院大学(KIC)の院生です。<br>未経験ですが、Webエンジニアを目指して頑張っています。<br>よろしくお願いします！
+                        <p id="target">
+                            台湾出身の留学生です。<br>
+                            現在は神戸情報大学院大学(KIC)の院生です。<br>
+                            未経験ですが、Webエンジニアを目指して頑張っています。<br>
+                            よろしくお願いします！
+                        </p>
+                        <p id="c-target">
+                            2022年4月からKICというICTに関する大学院に入りました。<br>
+                            2022年6月末からプログラミング言語を勉強し始めました。<br>
+                            勉強したプログラミング言語: HTML, CSS, JavaScript, MySQL, PHP, Git。
                         </p>
                     </div>
                     <a href="mailto:elmaspy@gmail.com" class="btn-contact">
@@ -72,20 +81,20 @@
 
             img.addEventListener('click', () => {
                 const target = document.getElementById('target'); 
-                var newline = "\r\n"; 
-                const line1 = "2022年4月からKICというICTに関する大学院に入りました。";
-                const line2 = "2022年6月末からプログラミング言語を勉強し始めました。";
-                const line3 = "勉強したプログラミング言語: HTML, CSS, JavaScript, MySQL, PHP, Git。";
-                var state = true;
+                // var newline = "\r\n"; 
+                // const line1 = "2022年4月からKICというICTに関する大学院に入りました。";
+                // const line2 = "2022年6月末からプログラミング言語を勉強し始めました。";
+                // const line3 = "勉強したプログラミング言語: HTML, CSS, JavaScript, MySQL, PHP, Git。";
+                // var state = true;
 
-                if (state) {
-                    target.textContent = line1 + newline + line2 + newline + line3;
-                    img.src = "496535.jpg";
-                    state = false;
-                } else {
-                    target = document.getElementById('target');
-                    img = document.getElementById('trigger');
-                }
+                // if (state) {
+                //     target.textContent = line1 + newline + line2 + newline + line3;
+                //     img.src = "496535.jpg";
+                //     state = false;
+                // } else {
+                //     target = document.getElementById('target');
+                //     img = document.getElementById('trigger');
+                // }
 
             });
         </script>
