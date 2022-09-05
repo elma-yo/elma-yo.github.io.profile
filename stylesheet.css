@@ -187,8 +187,7 @@ main {
 .btn-contact {
     color: rgb(181, 170, 158);
     border: 1px solid rgb(181, 170, 158);
-    
-    border-radius: 16px;
+    border-radius: 5px;
     padding: 10px 20px;
 }
 
