@@ -1,6 +1,8 @@
 'use strict'
 {
-
+    document.getElementById('twitter').title = "Twitter";
+    document.getElementById('qiita').title = "Qiita";
+    document.getElementById('github').title = "GitHub";
     
     const img = document.getElementById('trigger');
     const target = document.getElementById('target'); 
