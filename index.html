@@ -78,11 +78,15 @@
             'use strict'
 
             const img = document.getElementById('trigger');
+            const target = document.getElementById('target'); 
+            const cTarget = document.getElementById('c-target');
+
+            cTarget.style.display = "none";
 
             img.addEventListener('click', () => {
-                const target = document.getElementById('target'); 
-                const cTarget = document.getElementById('c-target');
-
+                target.style.display = "none";
+                cTarget.style.display = "block";
+                img.src = "496535.jpg";
                 
                 // var newline = "\r\n"; 
                 // const line1 = "2022年4月からKICというICTに関する大学院に入りました。";
