@@ -11,7 +11,6 @@
     var state = true;
     function hideCTarget () { 
                 cTarget.style.display = "none";
-                const state = "hide";
     }
     hideCTarget();
 
