@@ -31,11 +31,18 @@
 }
 
 @media (max-width: 490px) {
+    .header-left {
+        width: 100%;
+        padding: 0;
+    }
+    .header-left h1 {
+        text-align: center;
+    }
     .header-right {
         display: none;
     }
     main{
-        padding: 0 0 30px 0;
+        padding-top: 0;
     }
     .main-list {
         flex-direction: column;
@@ -49,7 +56,8 @@
         margin: 0 auto;
     }
     .text {
-        padding-left: 10px;
+        padding-top: 10px;
+        padding-left: 19px;
     }
     .text h1 {
         font-size: 40px;
@@ -64,30 +72,22 @@
         word-wrap: break-word;
     }
     .btn-contact {
-        margin-left: 15px;
+        margin-left: 23px;
     }
 
     footer {
+        display: flex;
         height: auto;
+        margin: 0;
+        position: absolute;
     }
-
     .footer-left {
-        width: 100%;
-        margin: 10px 0 5px 0;
+        display: none;
     }
     .footer-right {
-        width: 100%;
-        float: left;
-        margin: 0 0 10px 0;
-    }
-    .footer-left h2 {
-        margin-left:20px;
-        margin-bottom: 5px;
-    }
-    .footer-left span {
-        margin-left: 20px;
+        margin: auto;
     }
     .footer-right li {
-        margin: 0 20px 10px;
+        margin: 20px;
     }
 }
