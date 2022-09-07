@@ -8,7 +8,7 @@
     const target = document.getElementById('target'); 
     const cTarget = document.getElementById('c-target');
 
-    var state = true;
+    let state = true;
     function hideCTarget () { 
                 cTarget.style.display = "none";
     }
